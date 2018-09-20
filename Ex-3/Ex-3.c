@@ -5,9 +5,9 @@ int main(){
         
     int temp, soma = 0, media = 0, cont=0;
     int i;
-    char temps[3];
+    char temps[50];
     
-    for ( i=1; i <= 3; i++){
+    for ( i=1; i <= 50; i++){
         printf ("Digite uma temperatura:\n>>> ");
         scanf ("%d", &temp);
         if ((temp<-100)||(temp>100)){
@@ -18,7 +18,7 @@ int main(){
             soma += temp;
         }
     }
-    media = soma/3;
+    media = soma/50;
 
     for (i=1; i <= 3; i++){
         if (temps[i] > media){
