@@ -3,7 +3,7 @@
 
 int main (void){
 
-	float soma;
+	float soma = 0;
 	float n;
 
 	while (1){
