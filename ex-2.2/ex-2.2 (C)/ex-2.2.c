@@ -3,7 +3,7 @@
 
 int main (void){
 
-	int a, v1, v2;
+	int a, v1, v2, maior, menor;
 	
 	printf ("Digite dois numeros: ");
 	scanf ("%d %d", &v1, &v2);
@@ -11,18 +11,15 @@ int main (void){
 	printf ("Esses sao os numeros compreendidos entre %d e %d: \n", v1, v2);
 
 	if (v1 > v2){
-		a = v2 + 1;
-		while (a < v1){
-			printf ("%d \n", a);
-			a += 1;		
-		}
-	} 
-	if (v2 > v1){
-		a = v1 + 1;
-		while (a < v2){
-			printf ("%d \n", a);
-			a += 1;
-		}
+		maior = v1;
+		menor = v2 + 1;
+	} else if (v2 > v1){
+		maior = v2;
+		menor = v1 + 1;
+	}
+	while (menor < maior){
+		printf ("%d \n", menor);
+		++menor;
 	}
 
 	return 0;
