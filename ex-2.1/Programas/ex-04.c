@@ -13,11 +13,9 @@ int main(void) {
 
 	if (km < 80){
 		printf ("ACELERE \n");
-	}	
-	if (km > 100){
+	} else if (km > 100){
 		printf ("DESACELERE \n");
-	}
-	if ((km >= 80) && (km <= 100)){
+	} else {
 		printf ("MANTENHA \n");
 	}
 
