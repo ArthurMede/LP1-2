@@ -8,8 +8,7 @@ int main (void){
 	scanf ("%d %d", &a, &b);
 	if (a > b){
 		printf ("O numero %d e maior que %d. \n", a, b);
-	} 
-	if (b > a){
+	} else if (b > a){
 		printf ("O numero %d e maior que %d. \n", b, a);
 	}
 
